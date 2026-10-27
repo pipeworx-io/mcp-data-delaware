@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-data-delaware",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Delaware Open Data (data.delaware.gov) Socrata MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-3e5ba9960e7a8d7e89feb2b5f8ed3b72fc5eb79b263de439bd55f8c29bdf8100",
-    "sourceCommit": "01241619b78233fd55d0e3612331499a63f03ae7"
+    "sourceHash": "v1-d537a04301191563812a95a1c56a8c4a0cf42b88ae33442394dce357ac0c17e1",
+    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
   }
 }
