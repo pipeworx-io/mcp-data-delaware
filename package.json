@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-data-delaware",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Delaware Open Data (data.delaware.gov) Socrata MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-data-delaware": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-delaware"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-data-delaware.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/data-delaware",
   "pipeworx": {
-    "sourceHash": "v1-d537a04301191563812a95a1c56a8c4a0cf42b88ae33442394dce357ac0c17e1",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "data-delaware",
+    "gatewaySlug": "data-delaware",
+    "sourceHash": "v1-65efa35c203308d50a115b0ac0bba4a3a058576c7e1ea101a4648f77c4825a1a",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
